@@ -1,4 +1,4 @@
-// api/copenhagen-beaches.js
+// api/middleware.js
 export default async function handler(req, res) {
   // Set CORS headers for ESP32 requests
   res.setHeader("Access-Control-Allow-Origin", "*");
