@@ -1,0 +1,20 @@
+{
+  "name": "copenhagen-beaches-api",
+  "version": 2,
+  "functions": {
+    "api/copenhagen-beaches.js": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=600, stale-while-revalidate=300"
+        }
+      ]
+    }
+  ]
+}
